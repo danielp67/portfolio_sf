@@ -14,17 +14,17 @@ function fadeInOnScroll(element) {
     let scrollTop = document.documentElement.scrollTop;
 
     let opacity = 0;
-    element.style.opacity = opacity;
+    element.style.opacity = opacity.toString();
 
     if (0 < distanceToBottom) {
-        opacity = 1 - (scrollTop - distanceToBottom) / (elementHeight*0.3);
-        element.style.opacity = opacity;
+        opacity = 1 - (scrollTop - distanceToBottom) / (elementHeight);
+        element.style.opacity = (opacity + 0.1).toString();
 
     }
 
     if (scrollTop > distanceToTop+200) {
-        opacity = 1 - (scrollTop - distanceToTop) / (elementHeight*1);
-        element.style.opacity = opacity;
+        opacity = 1 - (scrollTop - distanceToTop) / (elementHeight);
+        element.style.opacity = opacity.toString();
 
     }
 
@@ -55,17 +55,17 @@ function fadeInOnScroll2(element) {
     let scrollTop = document.documentElement.scrollTop;
 
     let opacity = 0;
-    element.style.opacity = opacity;
+    element.style.opacity = opacity.toString();
 
     if (0 < distanceToBottom) {
         opacity = 1 - (scrollTop - distanceToBottom) / (elementHeight*1.7);
-        element.style.opacity = opacity;
+        element.style.opacity = opacity.toString();
 
     }
 
     if (scrollTop > distanceToTop) {
-        opacity = 1 - (scrollTop - distanceToTop) / (elementHeight*1);
-        element.style.opacity = opacity;
+        opacity = 1 - (scrollTop - distanceToTop) / (elementHeight);
+        element.style.opacity = opacity.toString();
 
     }
 }

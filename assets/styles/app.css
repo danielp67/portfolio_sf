@@ -508,6 +508,9 @@ a:hover
     display: none;
 }
 
+textarea{
+    height:150px;
+}
 .submit-button:hover{
     -moz-box-shadow: 0px 0px 10px 10px #656565;
     -webkit-box-shadow: 0px 0px 10px 10px #656565;

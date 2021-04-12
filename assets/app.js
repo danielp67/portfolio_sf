@@ -10,4 +10,4 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
-import './js/scroll';
+import './js/content_scroll';
