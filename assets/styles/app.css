@@ -2,10 +2,43 @@
 /*-------------------------------*/
 /*------------RESET--------------*/
 /*-------------------------------*/
+
+@font-face
+{
+    font-family: 'Merriweather';
+    src: url('font/Merriweather/Merriweather-Regular.ttf') format('truetype');
+}
+
+.merryweather{
+    font-family: 'Merriweather';
+
+}
+
+@font-face
+{
+    font-family: 'Montserrat-Bold';
+    src: url('font/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Montserrat-Regular';
+    src: url('font/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+.montserrat{
+    font-family: 'Montserrat';
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Montserrat-Bold;
+}
+
 html, body{
     margin: 0;
     font-size: 100%;
-    font-family: 'Verdana';
+    font-family: Verdana;
     scroll-behavior: smooth;
 }
 
@@ -198,7 +231,7 @@ a:hover
 
     }
 
-    #bg-page1
+    #home
     {
         /*background: linear-gradient(#E0E0E0, #bebdbd);*/
         background: url('../../public/img/1.jpg') no-repeat fixed center center;
@@ -244,7 +277,7 @@ a:hover
 
     }
 
-    #bg-page1
+    #home
     {
         /*background: linear-gradient(#E0E0E0, #bebdbd);*/
         min-height: 100vh;
@@ -400,7 +433,9 @@ a:hover
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .8);
     position: relative;
     z-index: 1;
-    background: inherit;
+ /*   background: inherit;*/
+    background-color: rgba(255, 255, 255, 0.25);
+
     overflow: hidden;
 }
 
