@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Form\MessageType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
@@ -21,16 +22,18 @@ class HomeController extends AbstractController
         $messageForm = $this->createForm(MessageType::class);
         $messageForm->handleRequest($request);
 
-        if ($messageForm->isSubmitted() && $messageForm->isValid()) {
+        if ($messageForm->isSubmitted()) {
 
+            if ($messageForm->isValid()) {
             $this->addFlash('success', 'Votre email à été envoyé avec succès !');
             $email = (new Email())
-                ->from($messageForm->get('email')->getData())
+                ->from('monsite@web.com')
                 ->to('prabhakar.d@codeur.online')
 
                 //->priority(Email::PRIORITY_HIGH)
                 ->subject('Prise de contact de : ' . $messageForm->get('username')->getData())
-                ->text('Voici le contenu du message : ' . $messageForm->get('content')->getData());
+                ->text("Voici le contenu du message : " . $messageForm->get('content')->getData()
+                    . "\rSon email de contact : " . $messageForm->get('email')->getData());
                 //->html('<p>See Twig integration for better HTML integration!</p>');
 
             try {
@@ -39,10 +42,14 @@ class HomeController extends AbstractController
                 $this->addFlash('danger', "Erreur dans l'envoi de l'email");
 
             }
+            return $this->redirectToRoute('home');
+        }
 
+            $this->addFlash('danger', "Erreur dans le formulaire");
 
             return $this->redirectToRoute('home');
         }
+
 
 
         return $this->render('home/index.html.twig', [
@@ -51,5 +58,17 @@ class HomeController extends AbstractController
 
         ]);
     }
+
+
+    /**
+     * @Route("cv", name="display_cv")
+     */
+    public function getCv(): Response
+    {
+        $file = './dprabhakar_cv20210124 14.pdf';
+        return new BinaryFileResponse($file);
+    }
+
+
 
 }

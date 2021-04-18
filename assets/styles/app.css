@@ -9,11 +9,6 @@
     src: url('font/Merriweather/Merriweather-Regular.ttf') format('truetype');
 }
 
-.merryweather{
-    font-family: 'Merriweather';
-
-}
-
 @font-face
 {
     font-family: 'Montserrat-Bold';
@@ -23,22 +18,64 @@
 @font-face
 {
     font-family: 'Montserrat-Regular';
-    src: url('font/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+    src: url('font/Montserrat/Montserrat-Regular.ttf') format('truetype');
 }
 
-.montserrat{
-    font-family: 'Montserrat';
-
+@font-face
+{
+    font-family: 'Lato';
+    src: url('font/Lato/Lato-Regular.ttf') format('truetype');
 }
 
-h1, h2, h3, h4, h5, h6{
+
+h1, h2, h3, h4, h5, h6, a{
     font-family: Montserrat-Bold;
 }
+
+
+/*
+
+choix 1
+h2:nth-child(2) {
+ font-family: Lato;
+}
+
+h3:nth-child(3) {
+ font-family: Arial, sans-serif;
+}
+
+h1:nth-child(1) {
+ font-family: Lato;
+ font-weight: bold;
+ font-style: normal;
+}
+*/
+/*choix 2*/
+
+h2:nth-child(2) {
+ font-family: Montserrat-Regular;
+ font-weight: bold;
+ font-style: normal;
+}
+
+h3:nth-child(3) {
+ font-family: Montserrat-Regular;
+ font-weight: normal;
+ font-style: normal;
+}
+
+h1:nth-child(1) {
+ font-family: Lato;
+ font-weight: bold;
+ font-style: normal;
+}
+
+
 
 html, body{
     margin: 0;
     font-size: 100%;
-    font-family: Verdana;
+    font-family: Montserrat-Regular;
     scroll-behavior: smooth;
 }
 
@@ -231,6 +268,12 @@ a:hover
 
     }
 
+    .image_contact2{
+        width: 40px;
+        height:40px;
+
+    }
+
     #home
     {
         /*background: linear-gradient(#E0E0E0, #bebdbd);*/
@@ -272,6 +315,12 @@ a:hover
     }
 
     .image_contact{
+        width: 30px;
+        height:30px;
+
+    }
+
+    .image_contact2{
         width: 30px;
         height:30px;
 
@@ -325,7 +374,8 @@ a:hover
     flex:50%
 }
 
-.image_contact{
+
+.image_contact2{
     transition: 0.3s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -333,16 +383,14 @@ a:hover
     -o-transition: 0.3s;
 }
 
-
 .image_contact:hover{
-    -moz-box-shadow: 0px 0px 10px 5px #656565;
-    -webkit-box-shadow: 0px 0px 10px 5px #656565;
-    -o-box-shadow: 0px 0px 10px 5px #656565;
-    box-shadow: 0px 0px 10px 5px #656565;
+    -moz-box-shadow: 0px 0px 10px 10px #656565;
+    -webkit-box-shadow: 0px 0px 10px 10px #656565;
+    -o-box-shadow: 0px 0px 10px 10px #656565;
+    box-shadow: 0px 0px 10px 10px #656565;
     -moz-border-radius: 60px;
     -webkit-border-radius: 60px;
     border-radius: 60px;
-
 }
 
 
@@ -537,10 +585,10 @@ a:hover
     box-shadow: none;
 }
 
-.form__tips{
+.form__tips, .form-error{
     font-size: 1rem;
     color: rgb(192, 0, 0);
-    display: none;
+    /*display: none;*/
 }
 
 textarea{
@@ -551,7 +599,6 @@ textarea{
     -webkit-box-shadow: 0px 0px 10px 10px #656565;
     -o-box-shadow: 0px 0px 10px 10px #656565;
     box-shadow: 0px 0px 10px 10px #656565;
-
 
 }
 

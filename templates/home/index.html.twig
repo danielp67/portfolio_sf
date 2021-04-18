@@ -59,7 +59,7 @@
             <img src="img/mac-banner-reduce.png" alt="" class=" img-fluid banner d-block d-md-none g-0  "/>
 
         </div>
-        <div class="d-flex align-content-sm-around flex-column  flex-grow-1 bg-success  ">
+        <div class="d-flex align-content-sm-around flex-column mt-5">
 
         <div class=" d-flex justify-content-center flex-wrap my-5 ">
 
@@ -68,9 +68,9 @@
                      class="profil-page1 img-fluid rounded-circle border border-5 d-flex justify-content-center align-items-top"/>
             </div>
 
-            <div class=" ms-sm-3 text-center text-md-start bg-primary">
+            <div class=" ms-sm-3 text-center text-md-start">
                 <div>
-                    <h1 class="merryweather">Daniel Prabhakar</h1>
+                    <h1 class="">Daniel Prabhakar</h1>
                     <h2 class="">Concepteur Développeur d'Applications Web</h2>
                     <h3 class="">Région Alsace, France</h3>
                 </div>
@@ -86,7 +86,7 @@
                     <li><a href="https://www.linkedin.com/in/daniel-prabhakar-dev" target="_blank"><img
                                     src="img/linkedin-2.png" alt="linkedin" class="image_contact"></a>
                     </li>
-                    <li><a href=""><img src="img/cv-3.png" alt="cv" class="image_contact"></a>
+                    <li><a href="{{ path('display_cv') }}" target="_blank"><img src="img/cv-3.png" alt="cv" class="image_contact"></a>
                     </li>
                     <li><a href="https://github.com/danielp67" target="_blank"><img src="img/github-2.png"
                                                                                     alt="github" class="image_contact"></a>
@@ -107,12 +107,115 @@
         <div id="project" class="container text-white py-5">
             <h2 class=" text-projet  text-center">Mes projets</h2>
 
+            <!-- Online Bet -->
+
+
+            <div class="row vh-100 scroll">
+                <div class="col-lg-4 col-md-6 text-center d-flex align-items-center">
+                    <div>
+                        <h5 class="fs-3">Online Bet Sport avec Symfony, React & Docker</h5>
+                        <p class="fs-6">Création et développement complet d'un site de Paris Sportif comme un site e-commerce.
+                            J'ai réalisé ce projet en équipe, en 4 mois, en utilisant le framework Symfony avec la méthodologie TDD unitaire et fonctionnel.
+                            Développement complet sous Docker.
+                            J'ai rajouté une implémentation en ReactJS.
+                            <br>
+                        </p>
+                        <p class="fs-6">Technologies utilisées : Symfony, Phpunit et Panther pour les tests, Docker, ReactJS,  UML</p>
+                        <ul class="icon d-flex justify-content-evenly">
+                            <li class="d-flex align-items-center"><a href="./onlinebet_sport" class="btn btn-danger btn-lg"
+                                                                     target="_blank">Voir le site</a></li>
+                            <li><a class="btn btn-danger btn-lg"
+                                   href="https://github.com/danielp67/Online_Bet_Symfony" target="_blank">
+                                    <img src="/img/github-2.png" alt="github" class="image_contact2"/>
+                                </a></li>
+                        </ul>
+                        <img src="img/projet6.png" class="img-projet d-md-none mt-5" alt="Online Bet Sport display">
+
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
+                    <div id="carousel6" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button class="active bg-violet" type="button" data-bs-target="#carousel3" data-bs-slide-to="0"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                            <button class="bg-violet" type="button" data-bs-target="#carousel6" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button class="bg-violet" type="button" data-bs-target="#carousel6" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            <button class="bg-violet" type="button" data-bs-target="#carousel6" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            <button class="bg-violet" type="button" data-bs-target="#carousel6" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            <button class="bg-violet" type="button" data-bs-target="#carousel6" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/onlinebet_sport/Image1.png" alt="Slide 1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="btn btn-danger">Écran de connexion</h5>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/onlinebet_sport/Image2.png" alt="Slide 2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="btn btn-danger">Écran d'accueil</h5>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/onlinebet_sport/Image7.png" alt="Slide 3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="btn btn-danger">Visualisation des différents paris</h5>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/onlinebet_sport/Image4.png" alt="Slide 4">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="btn btn-danger">Gestion du compte utilisateur</h5>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/onlinebet_sport/Image5.png" alt="Slide 5">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="btn btn-danger">Écran d'accueil de la partie administrateur</h5>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/onlinebet_sport/Image6.png" alt="Slide 6">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="btn btn-danger">Gestion des différents paris</h5>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel6"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel6"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
             <!-- Ski Manager -->
 
             <div class="row vh-100 scroll">
                 <div class="col-lg-4 col-md-6 text-center d-flex align-items-center">
                     <div>
-                        <h5 class="fs-3">Ski Championships Manager</h5>
+                        <h5 class="fs-3">Ski Championships Manager en PHP et TDD</h5>
                         <p class="fs-6">Un système de gestion des compétitions de ski de la police française.
                             J'ai réalisé ce projet en 1 mois en PHP avec une architecture MVC et en TDD, et en implémentant
                             des designs patterns. <br>
@@ -124,7 +227,7 @@
                                                                      target="_blank">Voir le site</a></li>
                             <li><a class="btn btn-violet btn-lg"
                                    href="https://github.com/danielp67/Ski_Championship_Manager_PHP" target="_blank">
-                                    <img src="img/GitHub-Mark-32px.png" alt="github"/>
+                                    <img src="/img/github-2.png" alt="github" class="image_contact2"/>
                                 </a></li>
                         </ul>
                         <img src="img/projet3.png" class="img-projet d-md-none mt-5" alt="Ski Championships Manager display">
@@ -218,7 +321,7 @@
                                     site</a></li>
                             <li><a class="btn btn-success btn-lg" href="https://github.com/danielp67/Online_Games_React_JS"
                                    target="_blank">
-                                    <img src="img/GitHub-Mark-32px.png" alt="github"/>
+                                    <img src="/img/github-2.png" alt="github" class="image_contact2"/>
                                 </a></li>
                         </ul>
                         <img src="img/projet4.png" class="img-projet d-md-none mt-5" alt="Online Games reference your best video games">
@@ -313,7 +416,7 @@
                                     le site</a></li>
                             <li><a class="btn btn-success btn-lg"
                                    href="https://github.com/danielp67/Online_Games_API_Symfony" target="_blank">
-                                    <img src="img/GitHub-Mark-32px.png" alt="github"/>
+                                    <img src="/img/github-2.png" alt="github" class="image_contact2"/>
                                 </a></li>
                         </ul>
                         <img src="img/projet5.png" class="img-projet d-md-none mt-5" alt="Online Games API provides the best data for you">
@@ -401,11 +504,11 @@
                         <p class="fs-6">Technologies utilisées : Javascript, Html, Css</p>
                         <ul class="icon d-flex justify-content-evenly">
                             <li class="d-flex align-items-center"><a href="./bomberman_js/index.html"
-                                                                     class="btn btn-warning btn-lg" target="_blank">Voir le
+                                                                     class="btn btn-warning text-white btn-lg" target="_blank">Voir le
                                     site</a></li>
                             <li><a class="btn btn-warning " href="https://github.com/danielp67/Bomberman_JS"
                                    target="_blank">
-                                    <img src="/img/GitHub-Mark-32px.png" alt="github"/>
+                                    <img src="/img/github-2.png" alt="github" class="image_contact2"/>
                                 </a></li>
                         </ul>
                         <img src="img/projet1.png" class="img-projet d-md-none mt-5" alt="amazing bomberman in javascript">
@@ -491,7 +594,7 @@
                                     site</a></li>
                             <li><a class="btn btn-primary btn-lg" href="https://github.com/danielp67/WeTransfer_php"
                                    target="_blank">
-                                    <img src="img/GitHub-Mark-32px.png" alt="github"/>
+                                    <img src="/img/github-2.png" alt="github" class="image_contact2"/>
                                 </a></li>
                         </ul>
                         <img src="img/projet2.png" class="img-projet d-md-none mt-5" alt="Weezip2.0 an alternative of WeTransfer">
@@ -702,7 +805,9 @@
 
                     {{ form_widget(form.username,  {'attr': {"class" : "form__field", "placeholder" : "Nom"}}) }}
                         <label class="form__label" for="message_username"> <i class="fa fa-user" aria-hidden="true"></i> Votre nom</label>
-                        <span class="form__tips"> Invalide !</span>
+                        <div class="form-error">
+                            {{ form_errors(form.username) }}
+                        </div>
                         <br>
                     </div>
                     <div class="form__group field mb-5">
@@ -710,14 +815,18 @@
                         {{ form_widget(form.email) }}
                         <label class="form__label" for="message_email"> <i class="fa fa-envelope" aria-hidden="true"></i>
                             Votre email</label>
-                        <span class="form__tips"> Invalide !</span>
+                        <div class="form-error">
+                            {{ form_errors(form.email) }}
+                        </div>
                         <br>
                     </div>
                     <div class="form__group field mb-5">
                         {{ form_widget(form.content) }}
                         <label class="form__label" for="message_content"> <i class="fa fa-pencil" aria-hidden="true"></i>
                             Votre message</label>
-                        <span class="form__tips"> Invalide !</span>
+                        <div class="form-error">
+                            {{ form_errors(form.content) }}
+                        </div>
                         <br>
                     </div>
 
@@ -747,7 +856,7 @@
                         <li><a href="https://www.linkedin.com/in/daniel-prabhakar-dev" target="_blank">
                                 <img src="img/linkedin-2.png" alt="instagram" class="image_contact"></a>
                         </li>
-                        <li><a href=""><img src="img/cv-3.png" alt="cv" class="image_contact"></a>
+                        <li><a href="{{ path('display_cv') }}" target="_blank"><img src="img/cv-3.png" alt="cv" class="image_contact"></a>
                         </li>
                         <li><a href="https://github.com/danielp67" target="_blank">
                                 <img src="img/github-2.png" alt="github" class="image_contact"></a>

@@ -48,12 +48,12 @@ class Message
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\NotBlank(
-     *  message="Nom vide",
+     *  message="Message vide",
      *  groups={"message"}
      * )
      * @Assert\Regex(
      *  pattern =  "/^[a-zA-Z0-9À-ÿ .,?!'&()-]{2,255}$/",
-     *  message="Nom incorrect",
+     *  message="Message incorrect",
      *  groups={"message"}
      * )
      */
