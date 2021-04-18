@@ -65,7 +65,7 @@ class HomeController extends AbstractController
      */
     public function getCv(): Response
     {
-        $file = './dprabhakar_cv20210124 14.pdf';
+        $file = './dprabhakar_cv2021.pdf';
         return new BinaryFileResponse($file);
     }
 
