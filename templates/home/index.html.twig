@@ -4,9 +4,9 @@
 
 {% block body %}
 
-    <header class="bg-light fixed-top">
+    <header class="bg-dark text-white fixed-top">
         <nav>
-            <ul class="text-uppercase justify-content-evenly align-items-center pt-3 d-none d-md-flex">
+            <ul class="text-uppercase justify-content-evenly align-items-center pt-3 d-none d-md-flex fs-6">
                 <li><a href="#project">Mes Projets</a></li>
                 <li><a href="#skill">Mes Compétences</a></li>
                 <li><a href="#about-me">Qui suis-je ?</a></li>
@@ -14,11 +14,6 @@
             </ul>
         </nav>
 
-        <div id="menu_burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
 
 
         <div id="nav-container" class="  d-flex d-md-none">
@@ -52,14 +47,14 @@
 
 
     <!-- Corps de la page -->
-    <div id="home" class="container-fluid bg-secondary  pb-5">
+    <div id="home" class="container-fluid bg-secondary text-white pb-5">
 
-        <div class="row d-flex justify-content-center pt-5">
+       {# <div class="row d-flex justify-content-center pt-5">
             <img src="img/mac-banner-pano.png" alt="" class=" img-fluid banner d-none d-md-block g-0  "/>
             <img src="img/mac-banner-reduce.png" alt="" class=" img-fluid banner d-block d-md-none g-0  "/>
 
-        </div>
-        <div class="d-flex align-content-sm-around flex-column mt-5">
+        </div>#}
+        <div class="d-flex align-content-between flex-column mt-5">
 
         <div class=" d-flex justify-content-center flex-wrap my-5 ">
 
@@ -70,9 +65,9 @@
 
             <div class=" ms-sm-3 text-center text-md-start">
                 <div>
-                    <h1 class="">Daniel Prabhakar</h1>
-                    <h2 class="">Concepteur Développeur d'Applications Web</h2>
-                    <h3 class="">Région Alsace, France</h3>
+                    <h1 class="fs-2">Daniel Prabhakar</h1>
+                    <h2 class="fs-3">Concepteur Développeur d'Applications Web</h2>
+                    <h3 class="fs-4">Région Alsace, France</h3>
                 </div>
             </div>
         </div>
@@ -103,9 +98,10 @@
     <!-- Listes des projets en Carousel  ------------------------------------------------------------------------------------------->
 
 
-    <div   class="bg-projet-content">
+    <div class="bg-projet-content">
         <div id="project" class="container text-white py-5">
-            <h2 class=" text-projet  text-center">Mes projets</h2>
+
+            <h2 class="text-projet  text-center">Mes projets</h2>
 
             <!-- Online Bet -->
 
@@ -113,8 +109,8 @@
             <div class="row vh-100 scroll">
                 <div class="col-lg-4 col-md-6 text-center d-flex align-items-center">
                     <div>
-                        <h5 class="fs-3">Online Bet Sport avec Symfony, React & Docker</h5>
-                        <p class="fs-6">Création et développement complet d'un site de Paris Sportif comme un site e-commerce.
+                        <h5 class="">Online Bet Sport avec Symfony, React & Docker</h5>
+                        <p class="">Création et développement complet d'un site de Paris Sportif comme un site e-commerce.
                             J'ai réalisé ce projet en équipe, en 4 mois, en utilisant le framework Symfony avec la méthodologie TDD unitaire et fonctionnel.
                             Développement complet sous Docker.
                             J'ai rajouté une implémentation en ReactJS.
@@ -134,7 +130,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
+                <div class="offset-lg-1 col-lg-6 col-md-6 d-md-flex align-items-md-center d-none">
                     <div id="carousel6" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button class="active bg-violet" type="button" data-bs-target="#carousel3" data-bs-slide-to="0"
@@ -215,8 +211,8 @@
             <div class="row vh-100 scroll">
                 <div class="col-lg-4 col-md-6 text-center d-flex align-items-center">
                     <div>
-                        <h5 class="fs-3">Ski Championships Manager en PHP et TDD</h5>
-                        <p class="fs-6">Un système de gestion des compétitions de ski de la police française.
+                        <h5 class="">Ski Championships Manager en PHP et TDD</h5>
+                        <p class="">Un système de gestion des compétitions de ski de la police française.
                             J'ai réalisé ce projet en 1 mois en PHP avec une architecture MVC et en TDD, et en implémentant
                             des designs patterns. <br>
                         </p>
@@ -235,7 +231,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
+                <div class="offset-lg-1 col-lg-6 col-md-6 d-md-flex align-items-md-center d-none">
                     <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button class="active bg-violet" type="button" data-bs-target="#carousel3" data-bs-slide-to="0"
@@ -308,8 +304,8 @@
             <div class="row vh-100 my-5 scroll">
                 <div class="col-lg-4 col-md-6 text-center d-flex align-items-center">
                     <div>
-                        <h5 class="fs-3">Online Games en ReactJS</h5>
-                        <p class="fs-6">Un site référençant les jeux vidéos les plus populaires.<br>
+                        <h5 class="">Online Games en ReactJS</h5>
+                        <p class="">Un site référençant les jeux vidéos les plus populaires.<br>
                             J'ai réalisé ce projet en 3 semaines en ReactJS en implémentant des filtres et une barre de
                             recherche dynamiques ainsi qu'un mode sombre.
                             Enfin l'ajout et l'édition de commentaires.<br>
@@ -329,7 +325,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
+                <div class="offset-lg-1 col-lg-6 col-md-6 d-md-flex align-items-md-center d-none">
                     <div id="carousel4" class="carousel slide" data-bs-ride="carousel" >
                         <div class="carousel-indicators">
                             <button class="active bg-success" type="button" data-bs-target="#carousel4" data-bs-slide-to="0"
@@ -402,8 +398,8 @@
             <div class="row vh-100 scroll">
                 <div class="col-lg-4 col-md-6 text-center d-flex align-items-center">
                     <div>
-                        <h5 class="fs-3">Online Games API</h5>
-                        <p class="fs-6">L'API contenant les jeux vidéos les plus populaires.<br>
+                        <h5 class="">Online Games API avec Symfony</h5>
+                        <p class="">L'API contenant les jeux vidéos les plus populaires.<br>
                             J'ai réalisé ce projet en 2 semaines en Symfony en testant avec Postman pour vérifier les
                             différentes ressources de l'API puis réalisé la connexion avec le projet Online Games en
                             ReactJS.
@@ -424,7 +420,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
+                <div class="offset-lg-1 col-lg-6 col-md-6 d-md-flex align-items-md-center d-none">
                     <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button class="active bg-success" type="button" data-bs-target="#carousel5" data-bs-slide-to="0"
@@ -498,8 +494,8 @@
             <div class="row vh-100 scroll">
                 <div class="col-lg-4 col-md-6 text-center d-flex align-items-center">
                     <div>
-                        <h5 class="fs-3">Bomberman en JS</h5>
-                        <p class="fs-6">Un projet réalisé en 1 semaine en Javascript uniquement. Avec effets spéciaux, et
+                        <h5 class="">Bomberman en JS</h5>
+                        <p class="">Un projet réalisé en 1 semaine en Javascript uniquement. Avec effets spéciaux, et
                             habillage sonore. Fonctionne également sur mobile.</p>
                         <p class="fs-6">Technologies utilisées : Javascript, Html, Css</p>
                         <ul class="icon d-flex justify-content-evenly">
@@ -517,7 +513,7 @@
                 </div>
 
 
-                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
+                <div class="offset-lg-1 col-lg-6 col-md-6 d-md-flex align-items-md-center d-none">
 
                     <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -582,8 +578,8 @@
             <div class="row vh-100 scroll">
                 <div class="col-lg-4 col-md-6 text-center d-flex align-items-center ">
                     <div>
-                        <h5 class="fs-3">WeeZip 2.0</h5>
-                        <p class="fs-6">Une alternative à WeTransfer.
+                        <h5 class="">WeeZip 2.0 en PHP</h5>
+                        <p class="">Une alternative à WeTransfer.
                             J'ai réalisé ce projet en 2 semaines en PHP avec une architecture MVC.
                             Possibilité d'envoyer plusieurs fichiers, et gestion du drag and drop.
                         </p>
@@ -602,7 +598,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
+                <div class="offset-lg-1 col-lg-6 col-md-6 d-md-flex align-items-md-center d-none">
 
                     <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -671,14 +667,10 @@
             </div>
 
 
-        </div>
-    </div>
 
 
     <!-- Mes compétences -->
 
-    <div  class="bg-skill-content">
-        <div class="container-fluid">
             <section id="skill" class="py-5">
 
                 <h2 class=" text-projet  text-center">Mes compétences</h2>
@@ -830,7 +822,7 @@
                         <br>
                     </div>
 
-                    <button type="submit" class="btn bg-glass submit-button">
+                    <button type="submit" class="btn bg-glass submit-button text-white">
                         <i class="fa fa-paper-plane" aria-hidden="true"></i>
                         Envoyer
                     </button>
@@ -866,6 +858,7 @@
             </div>
         </footer>
 
+    </div>
 
     </div>
 

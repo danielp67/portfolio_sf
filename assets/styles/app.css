@@ -74,7 +74,7 @@ h1:nth-child(1) {
 
 html, body{
     margin: 0;
-    font-size: 100%;
+    font-size: 95%;
     font-family: Montserrat-Regular;
     scroll-behavior: smooth;
 }
@@ -87,9 +87,11 @@ html, body{
     margin-inline-end: 0;
 }
 
-ul
+li
 {
     list-style-type: none;
+    transition: 0.3s;
+
 }
 /*-------------------------------*/
 /*------------HEADER-------------*/
@@ -101,13 +103,14 @@ header{
 }
 a{
     text-decoration: none;
-    color : rgb(0, 0, 0);
+    color: #aaa;
     transition: 0.3s;
 }
 
 a:hover
 {
-    color: #e7957a;
+    color : rgb(255, 255, 255);
+
 }
 
 /*-------------------------------*/
@@ -254,30 +257,30 @@ a:hover
 @media all and (min-width: 800px) {
 
     .skills-logo {
-        height: 75px;
-        width: 75px;
-        margin: 15px;
+        height: 50px;
+        width: 50px;
+        margin: 10px;
     }
 }
 
 @media all and (min-width: 576px) {
 
     .image_contact{
-        width: 40px;
-        height:40px;
+        width: 30px;
+        height:30px;
 
     }
 
     .image_contact2{
-        width: 40px;
-        height:40px;
+        width: 30px;
+        height:30px;
 
     }
 
     #home
     {
         /*background: linear-gradient(#E0E0E0, #bebdbd);*/
-        background: url('../../public/img/1.jpg') no-repeat fixed center center;
+        background: url('../../public/img/bg1.jpg') no-repeat fixed center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -293,7 +296,7 @@ a:hover
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
-        background: url('../../public/img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg') no-repeat fixed center center;
+        background: url('../../public/img/bg2.jpg') no-repeat fixed center center;
         position: relative;
     }
 
@@ -348,7 +351,13 @@ a:hover
 
 }
 
-
+.bg-radial-black {
+    margin: 0;
+    color: white;
+    padding-bottom: 30px;
+    min-height: 100vh;
+    background: radial-gradient(#444, #111) fixed;
+}
 
 .banner{
     margin-top: 50px;
@@ -358,8 +367,8 @@ a:hover
 
 
 .profil-page1{
-    max-width: 150px;
-    width: 30vw;
+    max-width: 100px;
+    width: 25vw;
     color: white;
 }
 
@@ -417,9 +426,9 @@ a:hover
 
 
 .text-projet{
-    padding-top: 10rem;
-    padding-bottom: 6rem;
-    font-size: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    font-size: 2rem;
     top: 40%;
 }
 
@@ -429,7 +438,7 @@ a:hover
 }
 
 .text-projet-side{
-    font-size: 3rem;
+    font-size: 2rem;
 
 }
 .img-projet{
@@ -454,23 +463,15 @@ a:hover
 
 .skills-logo{
     transform: scale(1);
-    opacity: 0.8;
+    transition: 1s;
 
 }
+
 .skills-logo:hover{
     transform: scale(1.4);
-    opacity: 1;
-    transition: 1s;
 }
 
 
-
-
-#skill p {
-    font-size: 1.2rem;
-    /*    border: 5px solid rgb(179, 179, 179);
-        border-radius: 10px;*/
-}
 
 
 #about-me , #contact{
@@ -478,12 +479,11 @@ a:hover
 }
 
 .bg-glass{
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .8);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 1);
     position: relative;
     z-index: 1;
- /*   background: inherit;*/
-    background-color: rgba(255, 255, 255, 0.25);
-
+    background: inherit;
+  /*  background-color: rgba(255, 255, 255, 0.25);*/
     overflow: hidden;
 }
 
@@ -496,7 +496,7 @@ a:hover
     left: 0;
     right: 0;
     bottom: 0;
-    filter: blur(10px);
+    filter: blur(2px);
     margin: -20px;
 }
 
@@ -536,10 +536,10 @@ a:hover
     font-family: inherit;
     width: 100%;
     border: 0;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #aaa;
     outline: 0;
     font-size: 1.3rem;
-    color: #325692;
+    color: #ffffff;
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
@@ -559,14 +559,14 @@ a:hover
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #000000;
+    color: #ffffff;
 }
 
 .form__field:focus {
     padding-bottom: 6px;
     font-weight: 700;
     border-width: 3px;
-    border-image: linear-gradient(to right, #000000, #efeacb);
+    border-image: linear-gradient(to right, #ffffff, #aaa);
     border-image-slice: 1;
 }
 
@@ -576,7 +576,7 @@ a:hover
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #2b2b45;
+    color: #ffffff;
     font-weight: 700;
 }
 
@@ -599,7 +599,7 @@ textarea{
     -webkit-box-shadow: 0px 0px 10px 10px #656565;
     -o-box-shadow: 0px 0px 10px 10px #656565;
     box-shadow: 0px 0px 10px 10px #656565;
-
+    transition: 0.3s;
 }
 
 /************************************************************************/
