@@ -5,12 +5,6 @@
 
 @font-face
 {
-    font-family: 'Merriweather';
-    src: url('font/Merriweather/Merriweather-Regular.ttf') format('truetype');
-}
-
-@font-face
-{
     font-family: 'Montserrat-Bold';
     src: url('font/Montserrat/Montserrat-Bold.ttf') format('truetype');
 }
@@ -18,7 +12,7 @@
 @font-face
 {
     font-family: 'Montserrat-Regular';
-    src: url('font/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    src: url('font/Montserrat/Montserrat-Light.ttf') format('truetype');
 }
 
 @font-face
@@ -33,9 +27,10 @@ h1, h2, h3, h4, h5, h6, a{
 }
 
 
-/*
 
-choix 1
+
+/*choix 1*/
+
 h2:nth-child(2) {
  font-family: Lato;
 }
@@ -49,9 +44,9 @@ h1:nth-child(1) {
  font-weight: bold;
  font-style: normal;
 }
-*/
-/*choix 2*/
 
+/*choix 2*/
+/*
 h2:nth-child(2) {
  font-family: Montserrat-Regular;
  font-weight: bold;
@@ -69,12 +64,12 @@ h1:nth-child(1) {
  font-weight: bold;
  font-style: normal;
 }
-
+*/
 
 
 html, body{
     margin: 0;
-    font-size: 100%;
+    font-size: 90%;
     font-family: Montserrat-Regular;
     scroll-behavior: smooth;
 }
@@ -87,9 +82,18 @@ html, body{
     margin-inline-end: 0;
 }
 
+li
+{
+    list-style-type: none;
+    transition: 0.3s;
+
+}
+
 ul
 {
     list-style-type: none;
+    transition: 0.3s;
+
 }
 /*-------------------------------*/
 /*------------HEADER-------------*/
@@ -101,13 +105,13 @@ header{
 }
 a{
     text-decoration: none;
-    color : rgb(0, 0, 0);
     transition: 0.3s;
+    color: #aaaaaa;
 }
 
 a:hover
 {
-    color: #e7957a;
+    color : rgb(255, 255, 255);
 }
 
 /*-------------------------------*/
@@ -210,7 +214,7 @@ a:hover
 #nav-content li a {
     padding: 10px 5px;
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     color: black;
     transition: color .1s;
@@ -233,8 +237,7 @@ a:hover
 
 @media all and (max-width: 1024px) {
     html{
-        font-size: 90%;
-
+        font-size: 82%;
     }
 
 }
@@ -244,40 +247,18 @@ a:hover
         font-size: 75%;
 
     }
-    .skills-logo {
-        height: 50px;
-        width: 50px;
-        margin: 10px;
-    }
+
 }
 
 @media all and (min-width: 800px) {
 
-    .skills-logo {
-        height: 75px;
-        width: 75px;
-        margin: 15px;
-    }
 }
 
 @media all and (min-width: 576px) {
 
-    .image_contact{
-        width: 40px;
-        height:40px;
-
-    }
-
-    .image_contact2{
-        width: 40px;
-        height:40px;
-
-    }
-
     #home
     {
-        /*background: linear-gradient(#E0E0E0, #bebdbd);*/
-        background: url('../../public/img/1.jpg') no-repeat fixed center center;
+        background: url('../../public/img/bg1.jpg') no-repeat fixed center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -293,7 +274,7 @@ a:hover
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
-        background: url('../../public/img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg') no-repeat fixed center center;
+        background: url('../../public/img/bg2.jpg') no-repeat fixed center center;
         position: relative;
     }
 
@@ -310,27 +291,17 @@ a:hover
 
 @media all and (max-width: 576px) {
     html{
-        font-size: 65%;
-
-    }
-
-    .image_contact{
-        width: 30px;
-        height:30px;
-
-    }
-
-    .image_contact2{
-        width: 30px;
-        height:30px;
-
+        font-size: 70%;
     }
 
     #home
     {
-        /*background: linear-gradient(#E0E0E0, #bebdbd);*/
+        background: url('../../public/img/bg1-m.jpg')  center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
         min-height: 100vh;
-        background: url('../../public/img/1-rt.jpg')  top center;
     }
 
     .bg-projet-content{
@@ -338,44 +309,36 @@ a:hover
         background: url('../../public/img/bg-phone-6.jpg') top center;
     }
 
-
     .bg-skill-content{
         background: url('../../public/img/2.jpg')  top center;
         background-size: 100vw auto;
     }
-
-
-
 }
 
 
-
-.banner{
-    margin-top: 50px;
-    max-height: 35vh;
-    width: auto;
+.image_contact{
+    width: 30px;
+    height:30px;
 }
 
+.image_contact2{
+    width: 30px;
+    height:30px;
+
+}
 
 .profil-page1{
-    max-width: 150px;
-    width: 30vw;
-    color: white;
+    max-width: 100px;
+    width: 25vw;
 }
 
 .social_network{
-    margin-top: 5%;
-    margin-bottom: 5%;
     min-width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex:50%
 }
 
 
-.image_contact2{
+.image_contact{
+    transform: scale(1);
     transition: 0.3s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -384,106 +347,62 @@ a:hover
 }
 
 .image_contact:hover{
-    -moz-box-shadow: 0px 0px 10px 10px #656565;
-    -webkit-box-shadow: 0px 0px 10px 10px #656565;
-    -o-box-shadow: 0px 0px 10px 10px #656565;
-    box-shadow: 0px 0px 10px 10px #656565;
+  /*  -moz-box-shadow: 0px 0px 5px 5px #ffffff;
+    -webkit-box-shadow: 0px 0px 5px 5px #ffffff;
+    -o-box-shadow: 0px 0px 5px 5px #ffffff;
+    box-shadow: 0px 0px 5px 5px #ffffff;
     -moz-border-radius: 60px;
     -webkit-border-radius: 60px;
-    border-radius: 60px;
-}
-
-
-
-.bg-violet{
-    /* background: linear-gradient(90deg, #543ccc, #a32ae0);*/
-    background-color: #a32ae0;
+    border-radius: 60px;*/
+    transform: scale(1.1);
 }
 
 .btn-violet{
     color: #fff;
     border-color: #a32ae0;
-    /* background: linear-gradient(90deg, #543ccc, #a32ae0);*/
     background-color: #a32ae0;
-
 }
 
 .btn-violet:hover{
     color: #fff;
     border-color: #a32ae0;
-    /* background: linear-gradient(90deg, #543ccc, #a32ae0);*/
-    background-color: #a32ae0;
+    background-color: #7b10ae;
 }
 
 
 .text-projet{
-    padding-top: 10rem;
-    padding-bottom: 6rem;
-    font-size: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    font-size: 2rem;
     top: 40%;
 }
 
-.text-skill{
-    padding-top: 8rem;
-    padding-bottom: 3rem;
-}
-
-.text-projet-side{
-    font-size: 3rem;
-
-}
 .img-projet{
     width: 80vw;
     height: auto;
 }
 
-.transition-visible{
-    animation:1s scrollVisible ease-in forwards;
-}
-
-@keyframes scrollVisible {
-    from {opacity:0;}
-    to {opacity: 1;}
-}
-@-webkit-keyframes scrollVisible {
-    from {opacity:0;}
-    to {opacity:1;}
-}
-
-
-
 .skills-logo{
     transform: scale(1);
-    opacity: 0.8;
-
+    transition: 1s;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
 }
+
 .skills-logo:hover{
     transform: scale(1.4);
-    opacity: 1;
-    transition: 1s;
 }
-
-
-
-
-#skill p {
-    font-size: 1.2rem;
-    /*    border: 5px solid rgb(179, 179, 179);
-        border-radius: 10px;*/
-}
-
 
 #about-me , #contact{
-    margin-top: 18rem;
+    margin-top: 10rem;
 }
 
 .bg-glass{
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .8);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 1);
     position: relative;
     z-index: 1;
- /*   background: inherit;*/
-    background-color: rgba(255, 255, 255, 0.25);
-
+    background: inherit;
     overflow: hidden;
 }
 
@@ -496,7 +415,7 @@ a:hover
     left: 0;
     right: 0;
     bottom: 0;
-    filter: blur(10px);
+    filter: blur(2px);
     margin: -20px;
 }
 
@@ -536,19 +455,20 @@ a:hover
     font-family: inherit;
     width: 100%;
     border: 0;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #aaa;
     outline: 0;
-    font-size: 1.3rem;
-    color: #325692;
+    font-size: 1rem;
+    color: #ffffff;
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
 }
+
 .form__field::placeholder {
     color: transparent;
 }
 .form__field:placeholder-shown ~ .form__label {
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: text;
     top: 20px;
 }
@@ -558,15 +478,15 @@ a:hover
     top: 0;
     display: block;
     transition: 0.2s;
-    font-size: 1rem;
-    color: #000000;
+    font-size: 0.8rem;
+    color: #ffffff;
 }
 
 .form__field:focus {
     padding-bottom: 6px;
     font-weight: 700;
     border-width: 3px;
-    border-image: linear-gradient(to right, #000000, #efeacb);
+    border-image: linear-gradient(to right, #ffffff, #aaa);
     border-image-slice: 1;
 }
 
@@ -575,8 +495,8 @@ a:hover
     top: 0;
     display: block;
     transition: 0.2s;
-    font-size: 1rem;
-    color: #2b2b45;
+    font-size: 0.8rem;
+    color: #ffffff;
     font-weight: 700;
 }
 
@@ -586,7 +506,7 @@ a:hover
 }
 
 .form__tips, .form-error{
-    font-size: 1rem;
+    font-size: 0.6rem;
     color: rgb(192, 0, 0);
     /*display: none;*/
 }
@@ -599,7 +519,7 @@ textarea{
     -webkit-box-shadow: 0px 0px 10px 10px #656565;
     -o-box-shadow: 0px 0px 10px 10px #656565;
     box-shadow: 0px 0px 10px 10px #656565;
-
+    transition: 0.3s;
 }
 
 /************************************************************************/
@@ -612,22 +532,19 @@ textarea{
     height:60px;
     bottom:5%;
     right:3%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
     font-size: x-large;
     border-radius:50px;
     text-align:center;
-    box-shadow: 2px 2px 3px #999;
+    box-shadow: 2px 2px 3px #000000;
     z-index: 10;
 }
 
-
 .float:hover{
-    -moz-box-shadow: 0px 0px 10px 5px #656565;
-    -webkit-box-shadow: 0px 0px 10px 5px #656565;
-    -o-box-shadow: 0px 0px 10px 5px #656565;
-    box-shadow: 0px 0px 10px 5px #656565;
-
-
+    -moz-box-shadow: 0px 0px 5px 5px #656565;
+    -webkit-box-shadow: 0px 0px 5px 5px #656565;
+    -o-box-shadow: 0px 0px 5px 5px #656565;
+    box-shadow: 0px 0px 5px 5px #656565;
 }
 
 
@@ -657,27 +574,6 @@ footer .social_network{
     flex:50%;
 }
 
-footer .image_contact{
-    width: 30px;
-    height:30px;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-}
-
-
-footer .image_contact:hover{
-    -moz-box-shadow: 0px 0px 10px 5px #656565;
-    -webkit-box-shadow: 0px 0px 10px 5px #656565;
-    -o-box-shadow: 0px 0px 10px 5px #656565;
-    box-shadow: 0px 0px 10px 5px #656565;
-    -moz-border-radius: 60px;
-    -webkit-border-radius: 60px;
-    border-radius: 60px;
-}
-
 
 #bottom-shadow
 {
@@ -687,7 +583,6 @@ footer .image_contact:hover{
     bottom:0;
     background-color:rgba(0,0,0,0.6);
     box-shadow: 0 -10px 50px 30px rgba(0,0,0,0.6);
-
 }
 
 

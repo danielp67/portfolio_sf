@@ -18,17 +18,17 @@ function fadeInOnScroll(element, item) {
 
     //console.log( element.scrollHeight, element.getBoundingClientRect().top)
     if (100 >= element.getBoundingClientRect().top || item.onmouseover) {
-        item.style.color = "#e7957a";
+        item.style.color = "#ffffff";
     }
 
     if (0 >= element.scrollHeight + element.getBoundingClientRect().top || 0 <= element.getBoundingClientRect().top) {
-        item.style.color = "#000000";
+        item.style.color = "#aaaaaa";
     }
 
 
     item.addEventListener("mouseover", function( event ) {
         // on met l'accent sur la cible de mouseover
-        event.target.style.color = "#e7957a";
+        event.target.style.color = "#ffffff";
 
         // on réinitialise la couleur après quelques instants
         setTimeout(function() {

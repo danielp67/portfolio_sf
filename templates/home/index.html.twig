@@ -4,9 +4,9 @@
 
 {% block body %}
 
-    <header class="bg-light fixed-top">
+    <header class="bg-dark text-white fixed-top">
         <nav>
-            <ul class="text-uppercase justify-content-evenly align-items-center pt-3 d-none d-md-flex">
+            <ul class="text-uppercase justify-content-evenly align-items-center pt-3 d-none d-md-flex fs-6">
                 <li><a href="#project">Mes Projets</a></li>
                 <li><a href="#skill">Mes Compétences</a></li>
                 <li><a href="#about-me">Qui suis-je ?</a></li>
@@ -14,14 +14,9 @@
             </ul>
         </nav>
 
-        <div id="menu_burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
 
 
-        <div id="nav-container" class="  d-flex d-md-none">
+        <div id="nav-container" class="d-flex d-md-none">
             <div class="bg"></div>
             <div class="v-100 bg-light fixed-top"></div>
             <div class="button " tabindex="0">
@@ -52,642 +47,189 @@
 
 
     <!-- Corps de la page -->
-    <div id="home" class="container-fluid bg-secondary  pb-5">
+    <div id="home" class="container-fluid text-white min-vh-100 d-flex justify-content-center flex-column py-5">
 
-        <div class="row d-flex justify-content-center pt-5">
-            <img src="img/mac-banner-pano.png" alt="" class=" img-fluid banner d-none d-md-block g-0  "/>
-            <img src="img/mac-banner-reduce.png" alt="" class=" img-fluid banner d-block d-md-none g-0  "/>
+            <div class="col-10 offset-1 d-flex justify-content-center flex-wrap mt-5 ">
 
-        </div>
-        <div class="d-flex align-content-sm-around flex-column mt-5">
+                <div class=" me-sm-3">
+                    <img src="img/photo_profil.jpg" alt="profil"
+                         class="profil-page1 img-fluid rounded-circle border border-5 d-flex justify-content-center align-items-top"/>
+                </div>
 
-        <div class=" d-flex justify-content-center flex-wrap my-5 ">
-
-            <div class=" me-sm-3">
-                <img src="img/photo_profil.jpg" alt="profil"
-                     class="profil-page1 img-fluid rounded-circle border border-5 d-flex justify-content-center align-items-top"/>
-            </div>
-
-            <div class=" ms-sm-3 text-center text-md-start">
-                <div>
-                    <h1 class="">Daniel Prabhakar</h1>
-                    <h2 class="">Concepteur Développeur d'Applications Web</h2>
-                    <h3 class="">Région Alsace, France</h3>
+                <div class=" ms-sm-3 text-center text-md-start">
+                        <h1 class="fs-2">Daniel Prabhakar</h1>
+                        <h2 class="fs-3">Concepteur Développeur d'Applications Web</h2>
+                        <h3 class="fs-4">Région Alsace, France</h3>
                 </div>
             </div>
-        </div>
 
 
-        <div class="row d-inline-block d-flex justify-content-center icon-page1">
-            <div class="col-md-4 col-12 d-flex justify-content-evenly">
-                <ul class="social_network">
-                    <li><a href="#contact"><img src="img/mail-2.png" alt="mail" class="image_contact"></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/daniel-prabhakar-dev" target="_blank"><img
-                                    src="img/linkedin-2.png" alt="linkedin" class="image_contact"></a>
-                    </li>
-                    <li><a href="{{ path('display_cv') }}" target="_blank"><img src="img/cv-3.png" alt="cv" class="image_contact"></a>
-                    </li>
-                    <li><a href="https://github.com/danielp67" target="_blank"><img src="img/github-2.png"
-                                                                                    alt="github" class="image_contact"></a>
-                    </li>
-                </ul>
-            </div>
+                <div class="offset-md-4 col-md-4 offset-sm-2 col-sm-8 col-12 d-flex justify-content-evenly mb-5">
+                    <ul class="social_network d-flex justify-content-evenly">
+                        <li><a href="#contact"><img src="img/mail-2.png" alt="mail" class="image_contact"></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/daniel-prabhakar-dev" target="_blank"><img src="img/linkedin-2.png" alt="linkedin" class="image_contact"></a>
+                        </li>
+                        <li><a href="{{ path('display_cv') }}" target="_blank"><img src="img/cv-3.png" alt="cv" class="image_contact"></a>
+                        </li>
+                        <li><a href="https://github.com/danielp67" target="_blank"><img src="img/github-2.png" alt="github" class="image_contact"></a>
+                        </li>
+                    </ul>
+                </div>
 
-        </div>
-
-        </div>
     </div>
 
 
-    <!-- Listes des projets en Carousel  ------------------------------------------------------------------------------------------->
+    <!-- Listes des projets  ------------------------------------------------------------------------------------------->
 
 
-    <div   class="bg-projet-content">
-        <div id="project" class="container text-white py-5">
-            <h2 class=" text-projet  text-center">Mes projets</h2>
+    <div class="bg-projet-content">
+        <div class="container-fluid text-white py-5">
+            <section id="project" class="py-5">
+
+            <h2 class="text-projet  text-center">Mes projets</h2>
 
             <!-- Online Bet -->
-
-
-            <div class="row vh-100 scroll">
-                <div class="col-lg-4 col-md-6 text-center d-flex align-items-center">
-                    <div>
-                        <h5 class="fs-3">Online Bet Sport avec Symfony, React & Docker</h5>
-                        <p class="fs-6">Création et développement complet d'un site de Paris Sportif comme un site e-commerce.
+            <div class="row mt-5 ">
+                <div class=" col-lg-8 offset-lg-1 col-md-10 offset-md-1 text-center d-flex  align-items-center flex-md-row flex-column my-5 bg-glass">
+                    <div class="col-md-8 col-12 my-3">
+                        <h5 class="">Site de Paris Sportifs avec Symfony, React & Docker</h5>
+                       <p class="">Création et développement complet d'un site de Paris Sportif comme un site e-commerce.
                             J'ai réalisé ce projet en équipe, en 4 mois, en utilisant le framework Symfony avec la méthodologie TDD unitaire et fonctionnel.
                             Développement complet sous Docker.
                             J'ai rajouté une implémentation en ReactJS.
                             <br>
                         </p>
-                        <p class="fs-6">Technologies utilisées : Symfony, Phpunit et Panther pour les tests, Docker, ReactJS,  UML</p>
+                        <p class="">Technologies utilisées : Symfony, Phpunit et Panther pour les tests, Docker, ReactJS,  UML</p>
                         <ul class="icon d-flex justify-content-evenly">
-                            <li class="d-flex align-items-center"><a href="./onlinebet_sport" class="btn btn-danger btn-lg"
+                            <li class="d-flex align-items-center"><a href="./onlinebet_sport" class="btn btn-danger"
                                                                      target="_blank">Voir le site</a></li>
-                            <li><a class="btn btn-danger btn-lg"
+                            <li><a class="btn btn-danger"
                                    href="https://github.com/danielp67/Online_Bet_Symfony" target="_blank">
                                     <img src="/img/github-2.png" alt="github" class="image_contact2"/>
                                 </a></li>
                         </ul>
-                        <img src="img/projet6.png" class="img-projet d-md-none mt-5" alt="Online Bet Sport display">
 
                     </div>
-                </div>
-
-                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
-                    <div id="carousel6" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button class="active bg-violet" type="button" data-bs-target="#carousel3" data-bs-slide-to="0"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                            <button class="bg-violet" type="button" data-bs-target="#carousel6" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                            <button class="bg-violet" type="button" data-bs-target="#carousel6" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                            <button class="bg-violet" type="button" data-bs-target="#carousel6" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            <button class="bg-violet" type="button" data-bs-target="#carousel6" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-                            <button class="bg-violet" type="button" data-bs-target="#carousel6" data-bs-slide-to="5"
-                                    aria-label="Slide 6"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/onlinebet_sport/Image1.png" alt="Slide 1">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-danger">Écran de connexion</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/onlinebet_sport/Image2.png" alt="Slide 2">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-danger">Écran d'accueil</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/onlinebet_sport/Image7.png" alt="Slide 3">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-danger">Visualisation des différents paris</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/onlinebet_sport/Image4.png" alt="Slide 4">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-danger">Gestion du compte utilisateur</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/onlinebet_sport/Image5.png" alt="Slide 5">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-danger">Écran d'accueil de la partie administrateur</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/onlinebet_sport/Image6.png" alt="Slide 6">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-danger">Gestion des différents paris</h5>
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel6"
-                                data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel6"
-                                data-bs-slide="next">
-                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                    <div class="col-md-4 col-12 my-3">
+                    <img src="img/projet6.png" class="img-fluid img-projet" alt="Online Bet Sport display">
                     </div>
 
                 </div>
-            </div>
 
 
-            <!-- Ski Manager -->
+                <div class=" col-lg-8 offset-lg-3 col-md-10 offset-md-1 text-center d-flex  align-items-center flex-md-row flex-column-reverse my-5 bg-glass">
+                    <div class="col-md-4 col-12 my-3">
+                        <img src="img/projet3.png" class="img-fluid  img-projet" alt="Ski Championships Manager display">
 
-            <div class="row vh-100 scroll">
-                <div class="col-lg-4 col-md-6 text-center d-flex align-items-center">
-                    <div>
-                        <h5 class="fs-3">Ski Championships Manager en PHP et TDD</h5>
-                        <p class="fs-6">Un système de gestion des compétitions de ski de la police française.
+                    </div>
+                    <div class="col-md-8 col-12 my-3">
+                        <h5 class="">Application pour gérer les compétitions de skis en PHP et TDD</h5>
+                        <p class="">Un système de gestion des compétitions de ski de la police française.
                             J'ai réalisé ce projet en 1 mois en PHP avec une architecture MVC et en TDD, et en implémentant
                             des designs patterns. <br>
                         </p>
-                        <p class="fs-6">Technologies utilisées : Php dont plusieurs composants de Symfony, UML et wireframe,
+                        <p class="">Technologies utilisées : Php dont plusieurs composants de Symfony, UML et wireframe,
                             Phpunit et Pest pour les tests </p>
                         <ul class="icon d-flex justify-content-evenly">
-                            <li class="d-flex align-items-center"><a href="./ski_championships_manager/index.php" class="btn btn-violet btn-lg"
+                            <li class="d-flex align-items-center"><a href="./ski_championships_manager/index.php" class="btn btn-violet"
                                                                      target="_blank">Voir le site</a></li>
-                            <li><a class="btn btn-violet btn-lg"
+                            <li><a class="btn btn-violet"
                                    href="https://github.com/danielp67/Ski_Championship_Manager_PHP" target="_blank">
                                     <img src="/img/github-2.png" alt="github" class="image_contact2"/>
                                 </a></li>
                         </ul>
-                        <img src="img/projet3.png" class="img-projet d-md-none mt-5" alt="Ski Championships Manager display">
-
-                    </div>
-                </div>
-
-                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
-                    <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button class="active bg-violet" type="button" data-bs-target="#carousel3" data-bs-slide-to="0"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                            <button class="bg-violet" type="button" data-bs-target="#carousel3" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                            <button class="bg-violet" type="button" data-bs-target="#carousel3" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                            <button class="bg-violet" type="button" data-bs-target="#carousel3" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            <button class="bg-violet" type="button" data-bs-target="#carousel3" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/ski_manager/Image1.png" alt="Slide 1">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-violet">Écran d'accueil</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/ski_manager/Image2.png" alt="Slide 2">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-violet">Validation de l'upload</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/ski_manager/Image3.png" alt="Slide 3">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-violet">Réception du mail chez le destinataire</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/ski_manager/Image5.png" alt="Slide 4">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-violet">Écran de téléchargement</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/ski_manager/Image7.png" alt="Slide 5">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-violet">Téléchargement du fichier</h5>
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
-                                data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
-                                data-bs-slide="next">
-                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
                 </div>
-            </div>
 
-
-            <!-- Online Games ReactJS -->
-
-            <div class="row vh-100 my-5 scroll">
-                <div class="col-lg-4 col-md-6 text-center d-flex align-items-center">
-                    <div>
-                        <h5 class="fs-3">Online Games en ReactJS</h5>
-                        <p class="fs-6">Un site référençant les jeux vidéos les plus populaires.<br>
-                            J'ai réalisé ce projet en 3 semaines en ReactJS en implémentant des filtres et une barre de
+                <div class=" col-lg-8 offset-lg-1  col-md-10 offset-md-1 text-center d-flex  align-items-center flex-md-row flex-column my-5 bg-glass">
+                    <div class="col-md-8 col-12 my-3">
+                        <h5 class="">Site de référencement de jeux vidéos en ReactJS</h5>
+                        <p class="">Un site référençant les jeux vidéos les plus populaires.<br>
+                            J'ai réalisé ce projet en 3 semaines en ReactJS en implémentant des filtres, une barre de
                             recherche dynamiques ainsi qu'un mode sombre.
-                            Enfin l'ajout et l'édition de commentaires.<br>
-                            L'application fonctionne en étant connecté à l'API Online Games
+                            Enfin l'ajout et l'édition de commentaires. L'application fonctionne en étant connecté à une API que j'ai réalisé avec Symfony.
                         </p>
-                        <p class="fs-6">Technologies utilisées : ReactJS, Axios </p>
+                        <p class="">Technologies utilisées : ReactJS, Axios pour le Frontend, Symfony et MySQL pour la partie Backend API</p>
                         <ul class="icon d-flex justify-content-evenly">
-                            <li class="d-flex align-items-center"><a href="./online_games_reactjs" class="btn btn-success btn-lg" target="_blank">Voir le
+                            <li class="d-flex align-items-center"><a href="./online_games_reactjs" class="btn btn-success" target="_blank">Voir le
                                     site</a></li>
-                            <li><a class="btn btn-success btn-lg" href="https://github.com/danielp67/Online_Games_React_JS"
+                            <li><a class="btn btn-success" href="https://github.com/danielp67/Online_Games_React_JS"
                                    target="_blank">
                                     <img src="/img/github-2.png" alt="github" class="image_contact2"/>
                                 </a></li>
                         </ul>
-                        <img src="img/projet4.png" class="img-projet d-md-none mt-5" alt="Online Games reference your best video games">
-
                     </div>
-                </div>
-
-                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
-                    <div id="carousel4" class="carousel slide" data-bs-ride="carousel" >
-                        <div class="carousel-indicators">
-                            <button class="active bg-success" type="button" data-bs-target="#carousel4" data-bs-slide-to="0"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                            <button class="bg-success" type="button" data-bs-target="#carousel4" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                            <button class="bg-success" type="button" data-bs-target="#carousel4" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                            <button class="bg-success" type="button" data-bs-target="#carousel4" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            <button class="bg-success" type="button" data-bs-target="#carousel4" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/online_games_react/Image1.png" alt="Slide 1">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-success">Écran d'accueil avec filtres</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/online_games_react/Image2.png" alt="Slide 2">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-success">Liste des jeux</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/online_games_react/Image3.png" alt="Slide 3">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-success">Possibilité d'ajouter et éditer des commentaires</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/online_games_react/Image4.png" alt="Slide 4">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-success">Mode sombre</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/online_games_react/Image5.png" alt="Slide 5">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-success">Barre de recherche avec auto-completion</h5>
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
-                                data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
-                                data-bs-slide="next">
-                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- Online Games API -->
-
-            <div class="row vh-100 scroll">
-                <div class="col-lg-4 col-md-6 text-center d-flex align-items-center">
-                    <div>
-                        <h5 class="fs-3">Online Games API</h5>
-                        <p class="fs-6">L'API contenant les jeux vidéos les plus populaires.<br>
-                            J'ai réalisé ce projet en 2 semaines en Symfony en testant avec Postman pour vérifier les
-                            différentes ressources de l'API puis réalisé la connexion avec le projet Online Games en
-                            ReactJS.
-                            La document complete de l'API est disponible ici.
-                        </p>
-                        <p class="fs-6">Technologies utilisées : Symfony, Postman pour vérifier les appels à l'API,
-                            Swagger.io pour la documentation API </p>
-                        <ul class="icon d-flex justify-content-evenly">
-                            <li class="d-flex align-items-center"><a href="./online_games_api/home" class="btn btn-success btn-lg" target="_blank">Voir
-                                    le site</a></li>
-                            <li><a class="btn btn-success btn-lg"
-                                   href="https://github.com/danielp67/Online_Games_API_Symfony" target="_blank">
-                                    <img src="/img/github-2.png" alt="github" class="image_contact2"/>
-                                </a></li>
-                        </ul>
-                        <img src="img/projet5.png" class="img-projet d-md-none mt-5" alt="Online Games API provides the best data for you">
-
-                    </div>
-                </div>
-
-                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
-                    <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button class="active bg-success" type="button" data-bs-target="#carousel5" data-bs-slide-to="0"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                            <button class="bg-success" type="button" data-bs-target="#carousel5" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                            <button class="bg-success" type="button" data-bs-target="#carousel5" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                            <button class="bg-success" type="button" data-bs-target="#carousel5" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            <button class="bg-success" type="button" data-bs-target="#carousel5" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/online_games_api/Image1.png" alt="Slide 1">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-success">Test de l'envoi de données avec Postman</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/online_games_api/Image2.png" alt="Slide 2">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-success">Test d'une méthode GET</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/online_games_api/Image3.png" alt="Slide 3">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-success">Test d'une méthode POST</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/online_games_api/Image4.png" alt="Slide 4">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-success">Documentation API avec la liste des ressources</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/online_games_api/Image5.png" alt="Slide 5">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-success">Documentation API avec le schéma des données</h5>
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel5"
-                                data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel5"
-                                data-bs-slide="next">
-                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-
-
-            <!-- Bomberman -->
-
-            <div class="row vh-100 scroll">
-                <div class="col-lg-4 col-md-6 text-center d-flex align-items-center">
-                    <div>
-                        <h5 class="fs-3">Bomberman en JS</h5>
-                        <p class="fs-6">Un projet réalisé en 1 semaine en Javascript uniquement. Avec effets spéciaux, et
-                            habillage sonore. Fonctionne également sur mobile.</p>
-                        <p class="fs-6">Technologies utilisées : Javascript, Html, Css</p>
-                        <ul class="icon d-flex justify-content-evenly">
-                            <li class="d-flex align-items-center"><a href="./bomberman_js/index.html"
-                                                                     class="btn btn-warning text-white btn-lg" target="_blank">Voir le
-                                    site</a></li>
-                            <li><a class="btn btn-warning " href="https://github.com/danielp67/Bomberman_JS"
-                                   target="_blank">
-                                    <img src="/img/github-2.png" alt="github" class="image_contact2"/>
-                                </a></li>
-                        </ul>
-                        <img src="img/projet1.png" class="img-projet d-md-none mt-5" alt="amazing bomberman in javascript">
-
+                    <div class="col-md-4 col-12 my-3">
+                        <img src="img/projet4.png" class="img-fluid img-projet" alt="Online Games reference your best video games">
                     </div>
                 </div>
 
 
-                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
+                    <div class="col-lg-8 offset-lg-3 col-md-10 offset-md-1 text-center d-flex  align-items-center flex-md-row flex-column-reverse my-5 bg-glass">
+                        <div class="col-md-4 col-12 my-3">
+                            <img src="img/projet1.png" class="img-fluid img-projet" alt="amazing bomberman in javascript">
+                        </div>
 
-                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button class="active bg-warning" type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                            <button class="bg-warning" type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                            <button class="bg-warning" type="button" data-bs-target="#carousel1" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                            <button class="bg-warning" type="button" data-bs-target="#carousel1" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
+                        <div class="col-8  my-3">
+                            <h5 class="">Bomberman en JS</h5>
+                            <p class="">Un projet réalisé en 1 semaine en Javascript uniquement. Avec effets spéciaux, et
+                                habillage sonore. Fonctionne également sur mobile.</p>
+                            <p class="">Technologies utilisées : Javascript, Html, Css</p>
+                            <ul class="icon d-flex justify-content-evenly">
+                                <li class="d-flex align-items-center"><a href="./bomberman_js/index.html"
+                                                                         class="btn btn-warning text-white" target="_blank">Voir le
+                                        site</a></li>
+                                <li><a class="btn btn-warning" href="https://github.com/danielp67/Bomberman_JS"
+                                       target="_blank">
+                                        <img src="/img/github-2.png" alt="github" class="image_contact2"/>
+                                    </a></li>
+                            </ul>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/bomberman/start.png" alt="Slide 1">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-warning text-white">Écran d'accueil</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/bomberman/inplay.png" alt="Slide 2">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-warning text-white">Écran de jeu</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/bomberman/options.png" alt="Slide 3">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-warning text-white">Options</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/bomberman/win.png" alt="Slide 4">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-warning text-white">Écran de fin</h5>
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
-                                data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
-                                data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
-                </div>
-            </div>
-
-
-
-            <!-- Weezip -->
-
-            <div class="row vh-100 scroll">
-                <div class="col-lg-4 col-md-6 text-center d-flex align-items-center ">
-                    <div>
-                        <h5 class="fs-3">WeeZip 2.0</h5>
-                        <p class="fs-6">Une alternative à WeTransfer.
+                <div class="col-lg-8 offset-lg-1 col-md-10 offset-md-1 text-center d-flex  align-items-center flex-md-row flex-column my-5 bg-glass">
+                    <div class="col-md-8 col-12 my-3">
+                        <h5 class="">WeeZip 2.0 en PHP</h5>
+                        <p class="">Une alternative à WeTransfer.
                             J'ai réalisé ce projet en 2 semaines en PHP avec une architecture MVC.
                             Possibilité d'envoyer plusieurs fichiers, et gestion du drag and drop.
                         </p>
-                        <p class="fs-6">Technologies utilisées : Php, Javascript, Html, Css, Mailtrap (pour l'envoi
+                        <p class="">Technologies utilisées : Php, Javascript, Html, Css, Mailtrap (pour l'envoi
                             d'email)</p>
                         <ul class="icon d-flex justify-content-evenly">
-                            <li class="d-flex align-items-center"><a href="./wetransfer_php/index.php" class="btn btn-primary btn-lg" target="_blank">Voir le
+                            <li class="d-flex align-items-center"><a href="./wetransfer_php/index.php" class="btn btn-primary" target="_blank">Voir le
                                     site</a></li>
-                            <li><a class="btn btn-primary btn-lg" href="https://github.com/danielp67/WeTransfer_php"
+                            <li><a class="btn btn-primary" href="https://github.com/danielp67/WeTransfer_php"
                                    target="_blank">
                                     <img src="/img/github-2.png" alt="github" class="image_contact2"/>
                                 </a></li>
                         </ul>
-                        <img src="img/projet2.png" class="img-projet d-md-none mt-5" alt="Weezip2.0 an alternative of WeTransfer">
-
+                    </div>
+                    <div class="col-md-4 col-12 my-3">
+                        <img src="img/projet2.png" class="img-fluid img-projet" alt="Weezip2.0 an alternative of WeTransfer">
                     </div>
                 </div>
 
-                <div class="col-lg-8 col-md-6 d-md-flex align-items-md-center d-none">
-
-                    <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button class="bg-primary active" type="button" data-bs-target="#carousel2" data-bs-slide-to="0"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                            <button class="bg-primary" type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                            <button class="bg-primary" type="button" data-bs-target="#carousel2" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                            <button class="bg-primary" type="button" data-bs-target="#carousel2" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            <button class="bg-primary" type="button" data-bs-target="#carousel2" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/weezip/Image1.png" alt="Slide 1">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-primary">Écran d'accueil</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/weezip/Image2.png" alt="Slide 2">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-primary">Validation de l'upload</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/weezip/Image3.png" alt="Slide 3">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-primary">Réception du mail chez le destinataire</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/weezip/Image4.png" alt="Slide 4">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-primary">Écran de téléchargement</h5>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/weezip/Image5.png" alt="Slide 5">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="btn btn-primary">Téléchargement du fichier</h5>
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
-                                data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
-                                data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-                </div>
             </div>
+            </section>
 
 
-        </div>
-    </div>
+
 
 
     <!-- Mes compétences -->
 
-    <div  class="bg-skill-content">
-        <div class="container-fluid">
             <section id="skill" class="py-5">
 
-                <h2 class=" text-projet  text-center">Mes compétences</h2>
+                <h2 class="text-projet  text-center">Mes compétences</h2>
 
-                <div class="row scroll2">
-
-                    <div class="offset-md-3 col-md-6 offset-1 col-10 text-center">
-                        <h3 class="text-skill" >Hard Skills</h3>
+                <div class="row">
+                    <div class="offset-md-3 col-md-6 text-center">
                         <div class="my-5 bg-glass  d-flex align-content-around  flex-column ">
+                            <h3 class="my-3" >Hard Skills</h3>
+
                             <p class="m-4">Concevoir une application Web à partir d’un cahier des charges ou un
                                 scénario utilisateur
                             </p>
@@ -701,43 +243,36 @@
                             </p>
                         </div>
                     </div>
-                </div>
 
-                <div class="row scroll2">
-
-                    <div class="offset-1 col-10 offset-md-2 col-md-8  offset-xl-3 col-xl-6  offset-xxl-4 col-xxl-4 text-center px-3">
-
-                        <h3 class="text-skill" >Technologies utilisées</h3>
+                    <div class="offset-md-3 col-md-6 text-center">
                         <div class="my-5 bg-glass">
-
+                            <h3 class="my-3" >Technologies utilisées</h3>
+                            <div class="m-4">
                             <img class="skills-logo" src="/img/svg/symfony.svg" alt="">
                             <img class="skills-logo" src="/img/svg/php-1.svg" alt="">
                             <img class="skills-logo" src="/img/svg/docker-3.svg" alt="">
-                            <img class="skills-logo" src="/img/svg/phpunit.svg" alt="">
+                            <img class="skills-logo" src="/img/svg/phpunit-2.svg" alt="">
                             <img class="skills-logo" src="/img/svg/mysql-5.svg" alt="">
                             <img class="skills-logo" src="/img/svg/git-icon.svg" alt="">
                             <img class="skills-logo" src="/img/svg/bootstrap-5-1.svg" alt="">
 
                             <img class="skills-logo" src="/img/svg/react-2.svg" alt="">
                             <img class="skills-logo" src="/img/svg/java.svg" alt="">
-                            <img class="skills-logo" src="/img/svg/android-logomark.svg" alt="">
-                            <img class="skills-logo" src="/img/svg/github-icon-1.svg" alt="">
+                            <img class="skills-logo" src="/img/svg/android-logomark-2.svg" alt="">
                             <img class="skills-logo" src="/img/svg/javascript.svg" alt="">
-                            <img class="skills-logo" src="/img/svg/HTML5_logo_and_wordmark.svg" alt="">
-                            <img class="skills-logo" src="/img/svg/CSS.3.svg" alt="">
+                            <img class="skills-logo" src="/img/svg/HTML5_logo_and_wordmark-2.svg" alt="">
+                            <img class="skills-logo" src="/img/svg/CSS.3-2.svg" alt="">
                         </div>
-
+                        </div>
                     </div>
-                </div>
 
 
+                    <div class="offset-md-3 col-md-6 text-center">
 
-                <div class="row scroll2">
-                    <div class="offset-md-3 col-md-6 offset-1 col-10 text-center">
-
-                        <h3 class="text-skill" >Soft Skills</h3>
 
                         <div class="my-5 bg-glass  d-flex align-content-around  flex-column ">
+                            <h3 class="my-3" >Soft Skills</h3>
+
                             <p class="m-4">Capacité d'adaptation rapide
                             </p>
                             <p class="m-4">Autonome et efficace
@@ -746,14 +281,12 @@
                             </p>
                         </div>
                     </div>
-                </div>
 
+                    <div class="offset-md-3 col-md-6 text-center">
 
-                <div class="row scroll2">
-                    <div class="offset-md-3 col-md-6 offset-1 col-10 text-center">
-
-                        <h3 class="text-skill" >Mes ++</h3>
                         <div class="my-5 bg-glass  d-flex align-content-around  flex-column ">
+                            <h3 class="my-3" >Mes ++</h3>
+
                             <p class="m-4">10 ans d'expériences en tant qu'ingénieur mécanique
                             </p>
                             <p class="m-4">Capable de gérer des projets avec management d’équipe
@@ -766,11 +299,11 @@
                 </div>
             </section>
 
-            <section  id="about-me"  class="row vh-100 d-flex align-items-center py-5">
+            <section  id="about-me"  class="row d-flex align-items-center py-5">
 
-                <div class="col-lg-4 offset-lg-1 text-center ">
+                <div class="col-lg-4 offset-lg-4 col-10 offset-1 text-center ">
 
-                    <h2 class="text-projet-side">Qui suis-je ?</h2>
+                    <h2 class="text-projet">Qui suis-je ?</h2>
                     <p class="my-5">Bienvenue sur mon profil. <br/>
                         Je m'appelle Daniel, j'ai 32 ans et je vis à Colmar.<br/><br/>
 
@@ -783,25 +316,19 @@
                     </p>
                 </div>
 
-                <div class="col-lg-6  offset-lg-1 d-none d-lg-block g-0">
-                    <img src="/img/laptop-2562325_1920.jpg" alt="" class="img-fluid"/>
-                </div>
 
             </section>
 
 
-            <section id="contact" class="row py-5">
-                <div class=" text-center">
+            <section id="contact" class="row text-center">
+                    <h2 class="text-projet">Restons en contact</h2>
 
-                    <h2 class="text-projet-side">Restons en contact</h2>
-                </div>
-
-                <div class=" text-center px-3 py-5 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-lg-4 offset-lg-4">
+                <div class="px-3 my-5 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-lg-4 offset-lg-4">
 
 
-                    {{ form_start(form,  {'attr': {"class" : "my-5 fs-6 fw-normal"}}) }}
+                    {{ form_start(form,  {'attr': {"class" : ""}}) }}
 
-                    <div class="form__group field mb-5">
+                    <div class="form__group field">
 
                     {{ form_widget(form.username,  {'attr': {"class" : "form__field", "placeholder" : "Nom"}}) }}
                         <label class="form__label" for="message_username"> <i class="fa fa-user" aria-hidden="true"></i> Votre nom</label>
@@ -810,7 +337,7 @@
                         </div>
                         <br>
                     </div>
-                    <div class="form__group field mb-5">
+                    <div class="form__group field">
 
                         {{ form_widget(form.email) }}
                         <label class="form__label" for="message_email"> <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -820,7 +347,7 @@
                         </div>
                         <br>
                     </div>
-                    <div class="form__group field mb-5">
+                    <div class="form__group field">
                         {{ form_widget(form.content) }}
                         <label class="form__label" for="message_content"> <i class="fa fa-pencil" aria-hidden="true"></i>
                             Votre message</label>
@@ -830,7 +357,7 @@
                         <br>
                     </div>
 
-                    <button type="submit" class="btn bg-glass submit-button">
+                    <button type="submit" class="btn bg-glass submit-button text-white">
                         <i class="fa fa-paper-plane" aria-hidden="true"></i>
                         Envoyer
                     </button>
@@ -866,33 +393,13 @@
             </div>
         </footer>
 
-
     </div>
 
+    </div>
 
 
     <div id="bottom-shadow" class="bottom-shadow">
 
-    </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="formModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Confirmez l'envoi du formulaire ?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn btn-primary">Envoyer</button>
-                </div>
-            </div>
-        </div>
     </div>
 
 {% endblock %}
