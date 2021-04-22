@@ -22,7 +22,7 @@ function fadeInOnScroll(element, item) {
     }
 
     if (0 >= element.scrollHeight + element.getBoundingClientRect().top || 0 <= element.getBoundingClientRect().top) {
-        item.style.color = "#aaa";
+        item.style.color = "#aaaaaa";
     }
 
 

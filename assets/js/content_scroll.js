@@ -17,14 +17,14 @@ function fadeInOnScroll(element) {
     element.style.opacity = opacity.toString();
 
     if (0 < distanceToBottom) {
-        opacity = 1 - (scrollTop - distanceToBottom) / (elementHeight);
-        element.style.opacity = (opacity + 0.1).toString();
+        opacity = (scrollTop - distanceToBottom) / (elementHeight);
+        element.style.opacity = (opacity + 0.3).toString();
 
     }
 
-    if (scrollTop > distanceToTop+200) {
+    if (scrollTop > distanceToTop) {
         opacity = 1 - (scrollTop - distanceToTop) / (elementHeight);
-        element.style.opacity = opacity.toString();
+        element.style.opacity = (opacity - 0.3).toString();
 
     }
 

@@ -14,4 +14,3 @@ import './js/content_scroll';
 import './js/fab_scroll';
 import './js/display_alert';
 import './js/nav_scroll';
-import './js/inertia_scroll';
